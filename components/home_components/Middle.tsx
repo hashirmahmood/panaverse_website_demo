@@ -61,7 +61,7 @@ const Middle = () => {
         <Text p="4" fontWeight="600">
           In this brand-new type of curriculum, students will learn how to make
           money and boost exports in the classroom and will begin doing so
-          within six months of the program's beginning. It resembles a cross
+          within six months of the programs beginning. It resembles a cross
           between a corporate venture and an educational project.
         </Text>
       </VStack>
