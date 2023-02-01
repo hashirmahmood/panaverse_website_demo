@@ -1,4 +1,5 @@
 import { Flex, Text, Box } from "@chakra-ui/react";
+
 import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
@@ -23,12 +24,13 @@ const Footer = () => {
       </Box>
       {/* logos */}
       <Flex
-        flexDirection={["column", "column", "row"]}
+        flexDirection="row"
         justifyContent="space-between"
         alignItems="center"
-        w="30%"
+        w={["80%", "80%", "30%"]}
+        pb="4"
       >
-        <Box></Box>
+        {/* <Box></Box> */}
         <Box
           _hover={{
             transitionTimingFunction: "ease-in-out",

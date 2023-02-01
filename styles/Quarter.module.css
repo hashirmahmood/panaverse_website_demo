@@ -1,0 +1,12 @@
+.background {
+  /* height: 100vh; */
+
+  padding: 0 16px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 1) 45%,
+    rgba(255, 0, 0, 1) 100%,
+    rgba(179, 28, 28, 1) 100%
+  );
+}

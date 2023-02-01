@@ -1,12 +1,12 @@
 import { HStack, Button, Box, Heading, Flex, Stack } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
-
+import Navbar from "../Nabar";
 const Header = () => {
   return (
     <Box
       px="8"
-      height="94vh"
+      height={["85vh", "85vh", "94vh"]}
       // w="100vw"
       zIndex="1"
       position="relative"
@@ -26,59 +26,7 @@ const Header = () => {
         zIndex: -1,
       }}
     >
-      {/* NAV BAR */}
-      <Flex justifyContent="" pt="">
-        <Box>
-          <Image src="/logo.png" height="120" width="120" alt=""></Image>
-        </Box>
-        {/* Buttons */}
-        <HStack justifyContent="end" w="100%" spacing="12">
-          <Box></Box>
-          <Button
-            size="lg"
-            bg=""
-            color="white"
-            _hover={{
-              background: "red.500",
-              color: "white",
-              transform: "scale(1.1 ,1.1)",
-              transitionDuration: "0.3s",
-              transitionTimingFunction: "ease-in-out",
-            }}
-          >
-            <Link href="/">Home</Link>
-          </Button>
-          <Button
-            size="lg"
-            bg=""
-            color="white"
-            _hover={{
-              background: "red.500",
-              color: "white",
-              transform: "scale(1.1 ,1.1)",
-              transitionDuration: "0.3s",
-              transitionTimingFunction: "ease-in-out",
-            }}
-          >
-            <Link href="/">Courses</Link>
-          </Button>
-          <Button
-            size="lg"
-            bg=""
-            color="white"
-            _hover={{
-              background: "red.500",
-              color: "white",
-              transform: "scale(1.1 ,1.1)",
-              transitionDuration: "0.3s",
-              transitionTimingFunction: "ease-in-out",
-            }}
-          >
-            <Link href="/">Quarters</Link>
-          </Button>
-        </HStack>
-        <Box></Box>
-      </Flex>
+      <Navbar></Navbar>
       {/* Middle */}
       <Flex
         alignItems="center"
@@ -86,7 +34,7 @@ const Header = () => {
         flexDirection={["column", "column", "row"]}
       >
         {/* Headings */}
-        <Stack spacing="6" pt={["24", "24", "36"]}>
+        <Stack spacing="6" pt={["28", "28", "36"]}>
           <Heading color="white" size={["xl", "xl", "2xl"]}>
             Become A Certified
           </Heading>
